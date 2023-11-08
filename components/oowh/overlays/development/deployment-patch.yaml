@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: oowh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-zmup-tenant/byoc-app-ooie/oowh@sha256:691a661e6252ff71112f9a6a45073e26bd6d7194c1cb2877e3ba83b9b3bb31ca
+        name: my-java-quarkus
+        resources: {}
+status: {}
